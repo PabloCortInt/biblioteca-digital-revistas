@@ -454,6 +454,108 @@ nav li:hover a{
 }
 
 /*=====================================
+            CONTACTO
+======================================*/
+
+.contacto{
+
+    background:white;
+
+    padding:90px 20px;
+
+}
+
+.contacto-contenido{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.contacto h2{
+
+    font-size:42px;
+
+    color:#003366;
+
+    margin-bottom:15px;
+
+}
+
+.contacto-texto{
+
+    max-width:700px;
+
+    margin:0 auto 50px;
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+.contacto-tarjetas{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+}
+
+.contacto-card{
+
+    background:#f8f9fb;
+
+    width:300px;
+
+    padding:35px 25px;
+
+    border-radius:20px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.10);
+
+    transition:.3s;
+
+}
+
+.contacto-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.contacto-icono{
+
+    font-size:50px;
+
+    margin-bottom:20px;
+
+}
+
+.contacto-card h3{
+
+    color:#003366;
+
+    margin-bottom:15px;
+
+}
+
+.contacto-card p{
+
+    color:#666;
+
+    line-height:1.7;
+
+}
+
+/*=====================================
             FOOTER
 ======================================*/
 
