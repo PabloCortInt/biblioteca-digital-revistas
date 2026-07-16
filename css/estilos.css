@@ -398,6 +398,10 @@ nav li:hover a{
         padding:10px 20px;
     }
 
+        nav{
+        flex-direction:column;
+        gap:20px;
+
     nav ul{
         gap:15px;
     }
