@@ -446,6 +446,108 @@ nav li:hover a{
 
 }
 
+/*=====================================
+            FOOTER
+======================================*/
+
+.footer{
+
+    background:#003366;
+
+    color:white;
+
+    padding:70px 20px 40px;
+
+}
+
+.footer-contenido{
+
+    max-width:900px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.footer-logo{
+
+    width:80px;
+
+    margin-bottom:20px;
+
+}
+
+.footer h2{
+
+    font-size:34px;
+
+    margin:0;
+
+}
+
+.footer-subtitulo{
+
+    font-size:18px;
+
+    color:#d9d9d9;
+
+    letter-spacing:1px;
+
+    margin-top:10px;
+
+}
+
+.footer-linea{
+
+    width:90px;
+
+    height:4px;
+
+    background:#FFD700;
+
+    margin:35px auto;
+
+    border-radius:10px;
+
+}
+
+.footer h3{
+
+    font-size:26px;
+
+    margin-bottom:20px;
+
+    color:white;
+
+}
+
+.footer-descripcion{
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    color:#e8e8e8;
+
+    max-width:700px;
+
+    margin:auto;
+
+}
+
+.footer-copy{
+
+    margin-top:20px;
+
+    font-size:15px;
+
+    color:#cfcfcf;
+
+    line-height:1.7;
+
+}
+
 /* ========================================
    RESPONSIVE
 ======================================== */
