@@ -657,6 +657,54 @@ nav li:hover a{
 
 }
 
+/*=====================================
+        BOTÓN VOLVER ARRIBA
+======================================*/
+
+#btnArriba{
+
+    position:fixed;
+
+    bottom:30px;
+
+    right:30px;
+
+    width:55px;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#003366;
+
+    color:white;
+
+    font-size:28px;
+
+    cursor:pointer;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+
+    transition:.3s;
+
+    display:none;
+
+    z-index:999;
+
+}
+
+#btnArriba:hover{
+
+    background:#FFD700;
+
+    color:#003366;
+
+    transform:translateY(-5px) scale(1.08);
+
+}
+
 /* ========================================
    RESPONSIVE
 ======================================== */
