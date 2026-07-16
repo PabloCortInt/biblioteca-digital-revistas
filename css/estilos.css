@@ -388,6 +388,13 @@ nav li:hover a{
 
 }
 
+#presentacion,
+#contacto{
+
+    scroll-margin-top:120px;
+
+}
+
 /*=====================================
     PRESENTACIÓN
 ======================================*/
