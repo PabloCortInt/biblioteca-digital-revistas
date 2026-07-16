@@ -398,13 +398,20 @@ nav li:hover a{
         padding:10px 20px;
     }
 
-        nav{
-        flex-direction:column;
-        gap:20px;
-
-    nav ul{
-        gap:15px;
-    }
+nav{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:15px;
+}
+nav ul{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:12px;
+    width:100%;
+    padding:0;
+}
 
     nav a{
         font-size:15px;
