@@ -705,6 +705,28 @@ nav li:hover a{
 
 }
 
+/*=====================================
+        ANIMACIONES
+======================================*/
+
+.aparecer{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:all .8s ease;
+
+}
+
+.aparecer.visible{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
 /* ========================================
    RESPONSIVE
 ======================================== */
