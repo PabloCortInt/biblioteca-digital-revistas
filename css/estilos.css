@@ -189,6 +189,39 @@ nav li:hover a{
     animation:entradaHero .8s ease forwards;
     animation-delay:.70s;
 
+    position:relative;
+    overflow:hidden;
+
+}
+
+.hero button::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:-120%;
+
+    width:60%;
+
+    height:100%;
+
+    background:linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,.75),
+        transparent
+    );
+
+    transform:skewX(-25deg);
+
+}
+
+.hero button:hover::before{
+
+    animation:brilloBoton .8s ease;
+
 }
 
 .hero button:hover{
@@ -250,20 +283,65 @@ nav li:hover a{
     background:white;
 
     width:300px;
-    
+
     border-radius:20px;
 
     overflow:hidden;
 
-    box-shadow:0px 8px 20px rgba(0,0,0,.15);
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
 
-    transition:.4s;
+    transition:
+        transform .10s ease-out,
+        box-shadow .10s ease-out;
+
+    position:relative;
 
 }
 
 .tarjeta:hover{
 
-    transform:translateY(-10px);
+    transform:translateY(-14px) scale(1.02);
+
+    box-shadow:0 22px 45px rgba(0,0,0,.22);
+
+}
+
+.tarjeta.aparecer.visible:hover{
+
+    transform:translateY(-16px) scale(1.02);
+
+}
+
+.tarjeta::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-140%;
+
+    width:55%;
+
+    height:100%;
+
+    background:linear-gradient(
+        110deg,
+        transparent,
+        rgba(255,255,255,.35),
+        transparent
+    );
+
+    transform:skewX(-25deg);
+
+    pointer-events:none;
+
+}
+
+.tarjeta:hover::after{
+
+    animation:brilloTarjeta .9s ease;
 
 }
 
@@ -750,7 +828,9 @@ nav li:hover a{
 
     transform:translateY(60px);
 
-    transition:all .8s ease;
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
 
 }
 
@@ -847,6 +927,38 @@ nav ul{
 
         opacity:1;
         transform:translateY(0);
+
+    }
+
+}
+
+@keyframes brilloBoton{
+
+    from{
+
+        left:-120%;
+
+    }
+
+    to{
+
+        left:160%;
+
+    }
+
+}
+
+@keyframes brilloTarjeta{
+
+    from{
+
+        left:-140%;
+
+    }
+
+    to{
+
+        left:170%;
 
     }
 

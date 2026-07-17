@@ -67,3 +67,13 @@ elementos.forEach(elemento=>{
     observador.observe(elemento);
 
 });
+
+const hero = document.querySelector(".hero");
+
+window.addEventListener("scroll", () => {
+
+    const desplazamiento = window.scrollY;
+
+    hero.style.backgroundPosition = `center ${desplazamiento * 0.25}px`;
+
+});
