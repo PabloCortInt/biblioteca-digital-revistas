@@ -135,7 +135,10 @@ nav li:hover a{
     margin-bottom:20px;
 
     text-shadow:0 4px 15px rgba(0,0,0,.40);
-
+    
+    opacity:0;
+    transform:translateY(35px);
+    animation:entradaHero .8s ease forwards;
 }
 
 .hero p{
@@ -149,6 +152,11 @@ nav li:hover a{
     margin-bottom:35px;
 
     text-shadow:0 4px 15px rgba(0,0,0,.40);
+
+    opacity:0;
+    transform:translateY(35px);
+    animation:entradaHero .8s ease forwards;
+    animation-delay:.35s;
 
 }
 
@@ -175,6 +183,11 @@ nav li:hover a{
     font-weight:600;
 
     letter-spacing:.5px;
+
+    opacity:0;
+    transform:translateY(35px);
+    animation:entradaHero .8s ease forwards;
+    animation-delay:.70s;
 
 }
 
@@ -433,11 +446,33 @@ nav li:hover a{
 
     height:5px;
 
-    background:#FFD700;
-
     margin:0 auto 40px auto;
 
+    position:relative;
+
+}
+
+.linea::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:#FFD700;
+
     border-radius:10px;
+
+    transform:scaleX(0);
+
+    transform-origin:left;
+
+    transition:transform .8s ease;
 
 }
 
@@ -727,6 +762,12 @@ nav li:hover a{
 
 }
 
+.aparecer.visible.linea::after{
+
+    transform:scaleX(1);
+
+}
+
 /* ========================================
    RESPONSIVE
 ======================================== */
@@ -790,6 +831,23 @@ nav ul{
         font-size:17px;
         width:90%;
         max-width:350px;
+    }
+}
+
+@keyframes entradaHero{
+
+    from{
+
+        opacity:0;
+        transform:translateY(35px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
     }
 
 }
